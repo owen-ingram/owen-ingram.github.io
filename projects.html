@@ -1,79 +1,338 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Projects - Owen Ingram</title>
-    <style>
-        body {
-            font-family: Arial;
-            background: #111;
-            color: white;
-            margin: 0;
-        }
-
-        nav {
-            background: #222;
-            padding: 15px;
-            text-align: center;
-        }
-
-        nav a {
-            color: #00bfff;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-
-        .container {
-            padding: 40px;
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        .project {
-            margin-bottom: 50px;
-        }
-
-        .project img {
-            width: 100%;
-            max-width: 600px;
-            border-radius: 10px;
-        }
-
-        .project h2 {
-            margin-top: 10px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Owen Ingram | Projects</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <nav>
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
+  <a href="index.html" class="nav-logo">OI<span>.</span>DEV</a>
+  <ul class="nav-links">
+    <li><a href="index.html#about">ABOUT</a></li>
+    <li><a href="projects.html" class="active">PROJECTS</a></li>
+    <li><a href="index.html#contact">CONTACT</a></li>
+  </ul>
 </nav>
 
-<div class="container">
+<div class="page">
 
-    <h1>My Projects</h1>
+  <a href="index.html" class="back-link">&#x25C4; BACK TO HOME</a>
 
-    <div class="project">
-        <img src="images/LuckyFruitSS1.png" alt="Horror Game Screenshot">
-        <h2>Voice Interaction Horror Game</h2>
-        <p>
-            Unity-based horror game featuring voice commands, AI enemies,
-            and puzzle systems. Built with animation state machines,
-            inventory systems, and adaptive difficulty.
-        </p>
+  <div class="page-label">Work</div>
+  <div class="page-title">ALL PROJECTS</div>
+  <div class="page-rule"></div>
+
+
+  <!-- ============================================================ -->
+  <!-- PROJECT 1: WHISPERS OF THE VEIL -->
+  <!-- ============================================================ -->
+  <div class="project-entry" id="whispers-of-the-veil">
+
+    <div class="entry-header">
+      <div class="entry-title-group">
+        <div class="entry-title">WHISPERS OF THE VEIL</div>
+        <div class="entry-meta">ENGINE: <span>Unity</span> &nbsp;&mdash;&nbsp; LANG: <span>C#</span> &nbsp;&mdash;&nbsp; GENRE: <span>2.5D Horror Adventure</span></div>
+      </div>
+      <div class="entry-status">
+        <span class="status-dot complete"></span>
+        COMPLETE
+      </div>
     </div>
 
-    <div class="project">
-        <img src="images/SlotGif.gif" alt="Raylib Game Screenshot">
-        <img src="images/SlotParSheetSS.png" alt="Raylib Game Screenshot">
-        <h2>Raylib ECS Simulation</h2>
-        <p>
-			www
+    <div class="entry-body">
+      <div class="entry-main">
+
+        <div class="slideshow" data-slideshow>
+          <div class="slides-clip">
+            <button class="slide-btn prev">&#x25C4;</button>
+            <div class="slides-track">
+              <div class="slide"><img src="images/WotV01.png" alt="Whispers of the Veil screenshot 1"></div>
+              <div class="slide"><img src="images/WotV02.png" alt="Whispers of the Veil screenshot 2"></div>
+              <div class="slide"><img src="images/WotV03.png" alt="Whispers of the Veil screenshot 3"></div>
+            </div>
+            <button class="slide-btn next">&#x25BA;</button>
+          </div>
+          <div class="slide-footer">
+            <span class="slide-counter">1 / 3</span>
+            <div class="slide-dots">
+              <div class="slide-dot active"></div>
+              <div class="slide-dot"></div>
+              <div class="slide-dot"></div>
+            </div>
+          </div>
+        </div>
+
+        <p class="entry-desc">
+          Whispers of the Veil is a 2.5D pixelated horror adventure game that combines atmospheric horror with cutting-edge interactive mechanics. The game integrates voice commands for solving puzzles and interacting with the environment. Players assume the role of an older brother navigating a cursed forest to rescue his missing sister, encountering monsters, solving puzzles, and making impactful decisions that shape the narrative.
         </p>
+
+        <div class="content-label">What I Built</div>
+        <ul class="feature-list">
+          <li><strong>Player UI systems</strong> — dialogue and health interfaces</li>
+          <li><strong>Enemy AI encounters</strong> — combat behaviors and encounter logic</li>
+          <li><strong>Respawn &amp; checkpoint systems</strong> — persistent player progress</li>
+        </ul>
+
+        <div class="content-label">Collaboration</div>
+        <ul class="feature-list">
+          <li>Worked with 3 fellow students using GitHub for version control and task management</li>
+          <li>Integrated a modified DeepSpeech2 model for voice-based AI and environment interactions</li>
+        </ul>
+
+        <div class="entry-links">
+          <a href="https://github.com/Whispers-of-the-Veil/Whispers-Of-The-Veil" class="proj-link link-github">GitHub</a>
+          <a href="https://lucasdavis2335.itch.io/whispers-of-the-veil" class="proj-link link-primary">Play Game</a>
+        </div>
+      </div>
+      <div class="entry-sidebar">
+        <div class="sidebar-section">
+          <div class="sidebar-label">Tech Stack</div>
+          <div class="chips">
+            <span class="chip chip-accent">Unity</span>
+            <span class="chip chip-accent">C#</span>
+            <span class="chip">JetBrains Rider</span>
+            <span class="chip">DeepSpeech2</span>
+          </div>
+        </div>
+        <div class="sidebar-section">
+          <div class="sidebar-label">Focus Areas</div>
+          <div class="chips">
+            <span class="chip">Gameplay Programming</span>
+            <span class="chip">Enemy AI</span>
+            <span class="chip">Voice Interaction</span>
+            <span class="chip">Narrative Design</span>
+          </div>
+        </div>
+      </div>
     </div>
+
+  </div>
+
+
+  <!-- ============================================================ -->
+  <!-- PROJECT 2: LUCKY FRUIT -->
+  <!-- ============================================================ -->
+  <div class="project-entry" id="lucky-fruit">
+
+    <div class="entry-header">
+      <div class="entry-title-group">
+        <div class="entry-title">LUCKY FRUIT</div>
+        <div class="entry-meta">PLATFORM: <span>Windows</span> &nbsp;&mdash;&nbsp; LANG: <span>C#</span> &nbsp;&mdash;&nbsp; FRAMEWORK: <span>.NET / WinForms</span></div>
+      </div>
+      <div class="entry-status">
+        <span class="status-dot complete"></span>
+        COMPLETE
+      </div>
+    </div>
+
+    <div class="entry-body">
+      <div class="entry-main">
+
+        <div class="slideshow" data-slideshow>
+          <div class="slides-clip">
+            <button class="slide-btn prev">&#x25C4;</button>
+            <div class="slides-track">
+              <div class="slide"><img src="images/LF01.gif" alt="Lucky Fruit gameplay demo"></div>
+              <div class="slide"><img src="images/LF02.png" alt="Lucky Fruit screenshot 1"></div>
+              <div class="slide"><img src="images/LF03.png" alt="Lucky Fruit screenshot 2"></div>
+            </div>
+            <button class="slide-btn next">&#x25BA;</button>
+          </div>
+          <div class="slide-footer">
+            <span class="slide-counter">1 / 3</span>
+            <div class="slide-dots">
+              <div class="slide-dot active"></div>
+              <div class="slide-dot"></div>
+              <div class="slide-dot"></div>
+            </div>
+          </div>
+        </div>
+
+        <p class="entry-desc">
+          A three-reel slot machine game built entirely from scratch in C#. Players match symbols across three independently spun reels, with win probability calculated by multiplying each reel's symbol probability together — for example, P(Cherry, Cherry, Cherry) = (7/20) × (7/20) × (7/20) = 0.042875. The game targets a total RTP of 92.81%, with a regulatory par sheet exportable as a CSV showing full probability and statistics for the slot.
+        </p>
+
+        <div class="content-label">What I Built</div>
+        <ul class="feature-list">
+          <li><strong>Reel strip design</strong> — weighted symbol counts tuned to a target RTP of 92.81%, calculated using combinatorial probability without simulation</li>
+          <li><strong>Math engine</strong> — computes exact prize probabilities and expected values per symbol</li>
+          <li><strong>Par sheet export</strong> — generates a regulatory CSV report of probabilities and statistics</li>
+          <li><strong>WinForms UI</strong> — playable interface with spin animation and credit balance tracking</li>
+        </ul>
+
+        <div class="content-label">Project Structure</div>
+        <ul class="feature-list">
+          <li><strong>Data/ReelDefinitions.cs</strong> — strip definitions and RTP design table</li>
+          <li><strong>Engine/MathEngine.cs</strong> — theoretical RTP calculation</li>
+          <li><strong>Engine/SpinEngine.cs</strong> — random spin and result evaluation</li>
+          <li><strong>Models/</strong> — Symbol, PayTable, ReelStrip</li>
+          <li><strong>Reports/ParSheetGenerator.cs</strong> — CSV par sheet export</li>
+          <li><strong>UI/</strong> — WinForms UI and animation</li>
+        </ul>
+
+        <div class="entry-links">
+          <a href="https://github.com/owen-ingram/LuckyFruit" class="proj-link link-github">GitHub</a>
+          <a href="https://github.com/owen-ingram/LuckyFruit/releases" class="proj-link link-primary">Download</a>
+        </div>
+
+      </div>
+
+      <div class="entry-sidebar">
+        <div class="sidebar-section">
+          <div class="sidebar-label">Tech Stack</div>
+          <div class="chips">
+            <span class="chip chip-accent">C#</span>
+            <span class="chip chip-accent">.NET 10</span>
+            <span class="chip chip-accent">WinForms</span>
+          </div>
+        </div>
+        <div class="sidebar-section">
+          <div class="sidebar-label">Focus Areas</div>
+          <div class="chips">
+            <span class="chip">Math &amp; Probability</span>
+            <span class="chip">Game Logic</span>
+            <span class="chip">Data Export</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- ============================================================ -->
+  <!-- PROJECT 3: 3RD PERSON SHOOTER (WIP) -->
+  <!-- ============================================================ -->
+  <div class="project-entry" id="tps-shooter">
+
+    <div class="entry-header">
+      <div class="entry-title-group">
+        <div class="entry-title">3RD PERSON SHOOTER</div>
+        <div class="entry-meta">ENGINE: <span>Unity</span> &nbsp;&mdash;&nbsp; LANG: <span>C#</span> &nbsp;&mdash;&nbsp; TYPE: <span>TPS / Action</span></div>
+      </div>
+      <div class="entry-status">
+        <span class="status-dot wip"></span>
+        IN DEVELOPMENT
+      </div>
+    </div>
+
+    <div class="entry-body">
+      <div class="entry-main">
+
+        <div class="slideshow" data-slideshow>
+          <div class="slides-clip">
+            <button class="slide-btn prev">&#x25C4;</button>
+            <div class="slides-track">
+              <div class="slide"><div class="slide-placeholder"><span>SCREENSHOT 1<br>ADD IMAGE</span></div></div>
+              <div class="slide"><div class="slide-placeholder"><span>SCREENSHOT 2<br>ADD IMAGE</span></div></div>
+              <div class="slide"><div class="slide-placeholder"><span>SCREENSHOT 3<br>ADD IMAGE</span></div></div>
+            </div>
+            <button class="slide-btn next">&#x25BA;</button>
+          </div>
+          <div class="slide-footer">
+            <span class="slide-counter">1 / 3</span>
+            <div class="slide-dots">
+              <div class="slide-dot active"></div>
+              <div class="slide-dot"></div>
+              <div class="slide-dot"></div>
+            </div>
+          </div>
+        </div>
+
+        <p class="entry-desc">
+          A modular third-person shooter framework built in Unity 6, aimed at creating an authentic, cinematic TPS template. The project features 8-directional locomotion, Cinemachine-driven camera controls, a runtime weapon equipment system with Animation Rigging IK, scene persistence, and an inventory system — all built on a scalable, component-based architecture.
+        </p>
+
+        <div class="content-label">What's In So Far</div>
+        <ul class="feature-list">
+          <li><strong>Locomotion &amp; combat</strong> — 8-directional movement, sprinting, aiming, and animation-driven combat using Unity's New Input System</li>
+          <li><strong>Cinemachine camera system</strong> — free-look movement, dynamic follow behavior, and aim-down-sights functionality</li>
+          <li><strong>Weapon equipment system</strong> — runtime weapon swapping, multiple equipment slots, and Animation Rigging IK for realistic weapon handling</li>
+          <li><strong>Scene persistence &amp; inventory</strong> — systems for retaining player state and items across scenes</li>
+        </ul>
+
+        <div class="content-label">Coming Next</div>
+        <ul class="feature-list">
+          <li>Refining smooth, cinematic character locomotion</li>
+          <li>Exploring expansion for multiplayer compatibility</li>
+        </ul>
+
+        <div class="entry-links">
+          <span class="proj-link link-disabled">Not yet playable</span>
+        </div>
+
+      </div>
+
+      <div class="entry-sidebar">
+        <div class="sidebar-section">
+          <div class="sidebar-label">Tech Stack</div>
+          <div class="chips">
+            <span class="chip chip-accent">Unity 6</span>
+            <span class="chip chip-accent">C#</span>
+            <span class="chip">JetBrains Rider</span>
+            <span class="chip">Cinemachine</span>
+            <span class="chip">Animation Rigging</span>
+          </div>
+        </div>
+        <div class="sidebar-section">
+          <div class="sidebar-label">Focus Areas</div>
+          <div class="chips">
+            <span class="chip">Gameplay Programming</span>
+            <span class="chip">Camera Systems</span>
+            <span class="chip">Systems Architecture</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 
 </div>
+
+<footer>&copy; 2026 Owen Ingram</footer>
+
+<script>
+  document.querySelectorAll('[data-slideshow]').forEach(function(ss) {
+    var track   = ss.querySelector('.slides-clip .slides-track');
+    var dots    = ss.querySelectorAll('.slide-dot');
+    var counter = ss.querySelector('.slide-counter');
+    var total   = ss.querySelectorAll('.slide').length;
+    var cur     = 0;
+
+    function go(n) {
+      cur = (n + total) % total;
+      track.style.transform = 'translateX(-' + (cur * 100) + '%)';
+      dots.forEach(function(d, i) { d.classList.toggle('active', i === cur); });
+      counter.textContent = (cur + 1) + ' / ' + total;
+    }
+
+    ss.querySelector('.prev').addEventListener('click', function() { go(cur - 1); });
+    ss.querySelector('.next').addEventListener('click', function() { go(cur + 1); });
+    dots.forEach(function(d, i) { d.addEventListener('click', function() { go(i); }); });
+    ss.setAttribute('tabindex', '0');
+    ss.addEventListener('keydown', function(e) {
+      if (e.key === 'ArrowLeft')  go(cur - 1);
+      if (e.key === 'ArrowRight') go(cur + 1);
+    });
+  });
+
+  window.addEventListener('load', function() {
+    var hash = window.location.hash;
+    if (hash) {
+      var target = document.querySelector(hash);
+      if (target) {
+        setTimeout(function() {
+          var offset = target.getBoundingClientRect().top + window.scrollY - 72;
+          window.scrollTo({ top: offset, behavior: 'smooth' });
+        }, 100);
+      }
+    }
+  });
+</script>
 
 </body>
 </html>

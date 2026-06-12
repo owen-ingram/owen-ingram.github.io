@@ -1,55 +1,202 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Owen Ingram - Game Developer</title>
-	<a href="projects.html" class="btn">View My Projects</a>	
-    <style>
-        body {
-            font-family: Arial;
-            background: #111;
-            color: white;
-            text-align: center;
-            padding: 50px;
-        }
-        a { color: #00bfff; }
-		.btn {
-			display: inline-block;
-			padding: 12px 25px;
-			background: #00bfff;
-			color: white;
-			text-decoration: none;
-			border-radius: 8px;
-			font-weight: bold;
-			transition: 0.2s;
-		}
-
-		.btn:hover {
-			background: #009acd;
-		}
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Owen Ingram | Game Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<h1>Owen Ingram</h1>
-<h2>Game Developer</h2>
+<nav>
+  <a href="#hero" class="nav-logo">OI<span>.</span>DEV</a>
+  <ul class="nav-links">
+    <li><a href="#about">ABOUT</a></li>
+    <li><a href="#projects">PROJECTS</a></li>
+    <li><a href="#contact">CONTACT</a></li>
+  </ul>
+</nav>
 
-<p>Computer Science graduate focused on gameplay systems and engine architecture.</p>
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-label">Available for work</div>
+  <h1>OWEN<br>INGRAM</h1>
+  <div class="hero-role">GAME DEVELOPER &amp; SOFTWARE ENGINEER</div>
+  <div class="hero-rule"></div>
+  <p class="hero-desc">
+    Building games and software with C# &amp; Unity. Focused on game programming and design, with a solid background in .NET, databases, and systems.
+  </p>
+  <div class="hero-cta">
+    <a href="#projects" class="btn btn-primary">VIEW PROJECTS</a>
+    <a href="#contact" class="btn btn-secondary">GET IN TOUCH</a>
+  </div>
+</section>
 
-<h3>Projects</h3>
+<hr class="page-divider">
 
-<p>
-<b>Horror Voice Interaction Game</b><br>
-Unity project with voice command mechanics.
-</p>
+<!-- ABOUT -->
+<section id="about">
+  <div class="sec-label">Background</div>
+  <div class="sec-title">ABOUT ME</div>
+  <div class="sec-rule"></div>
 
-<p>
-<b>Raylib ECS Simulation</b><br>
-C++ entity component system with physics and rendering.
-</p>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>
+        I'm a game developer and software engineer who works primarily in <strong>Unity</strong> for system and game design, writing gameplay and engine-level code in <strong>C#</strong>.
+      </p>
+      <p>
+        Outside of game development, I work across a broad technical stack — from data pipelines and visualization to 3D tooling and systems administration — giving me the range to contribute in both creative and engineering-focused roles.
+      </p>
+      <p>
+        I'm actively looking for a role as a <strong>game programmer, game designer,</strong> or software engineer where I can bring both technical depth and a designer's sensibility.
+      </p>
+    </div>
 
-<h3>Links</h3>
+    <div class="skills-stack">
+      <div>
+        <div class="skill-group-label">Languages</div>
+        <div class="chips">
+          <span class="chip chip-accent">C#</span>
+          <span class="chip chip-accent">C++</span>
+          <span class="chip chip-accent">Python</span>
+          <span class="chip chip-accent">SQL</span>
+        </div>
+      </div>
+      <div>
+        <div class="skill-group-label">Game Dev</div>
+        <div class="chips">
+          <span class="chip">Unity</span>
+          <span class="chip">Unreal Engine</span>
+          <span class="chip">Raylib</span>
+          <span class="chip">Blender</span>
+        </div>
+      </div>
+      <div>
+        <div class="skill-group-label">Data</div>
+        <div class="chips">
+          <span class="chip">PostgreSQL</span>
+          <span class="chip">Power BI</span>
+          <span class="chip">Azure</span>
+          <span class="chip">pgAdmin</span>
+        </div>
+      </div>
+      <div>
+        <div class="skill-group-label">Tools</div>
+        <div class="chips">
+          <span class="chip">Git</span>
+          <span class="chip">GitHub</span>
+          <span class="chip">Rider</span>
+          <span class="chip">VS Code</span>
+          <span class="chip">Linux/Unix</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<a href="https://github.com/owen-ingram">GitHub</a>
+<hr class="page-divider">
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="sec-label">Work</div>
+  <div class="sec-title">PROJECTS</div>
+  <div class="sec-rule"></div>
+
+  <div class="projects-grid">
+
+    <!-- WHISPERS OF THE VEIL -->
+    <div class="project-card" onclick="window.location='projects.html#whispers-of-the-veil'">
+      <div class="card-status">
+        <span class="status-dot complete"></span>
+        COMPLETE
+      </div>
+      <div class="card-title">WHISPERS OF THE VEIL</div>
+      <div class="card-engine">Unity &mdash; C# &mdash; JetBrains Rider</div>
+      <p class="card-desc">
+        An isometric pixel horror game with voice integration. Built gameplay systems including dialogue, health UI, enemy AI encounters, combat, and checkpoints — with a modified DeepSpeech2 model driving voice-based AI and environment interactions.
+      </p>
+      <div class="card-tags">
+        <span class="tag">Unity</span>
+        <span class="tag">C#</span>
+        <span class="tag">Enemy AI</span>
+        <span class="tag">Voice Integration</span>
+      </div>
+      <div class="card-footer">
+        <a href="projects.html#whispers-of-the-veil" class="card-cta" onclick="event.stopPropagation()">VIEW DETAILS &rarr;</a>
+        <a href="https://github.com/Whispers-of-the-Veil/Whispers-Of-The-Veil" class="card-gh" onclick="event.stopPropagation()">GitHub</a>
+      </div>
+    </div>
+
+    <!-- LUCKY FRUIT -->
+    <div class="project-card" onclick="window.location='projects.html#lucky-fruit'">
+      <div class="card-status">
+        <span class="status-dot complete"></span>
+        COMPLETE
+      </div>
+      <div class="card-title">LUCKY FRUIT</div>
+      <div class="card-engine">C# &mdash; .NET 10 &mdash; WinForms</div>
+      <p class="card-desc">
+        A 3-wheel classic fruit slot machine with exact theoretical RTP and regulatory par sheet export. Reel strips were tuned to a target RTP of 92.81% using combinatorial probability, with a math engine computing exact prize probabilities and expected values.
+      </p>
+      <div class="card-tags">
+        <span class="tag">C#</span>
+        <span class="tag">WinForms</span>
+        <span class="tag">.NET 10</span>
+        <span class="tag">Probability</span>
+      </div>
+      <div class="card-footer">
+        <a href="projects.html#lucky-fruit" class="card-cta" onclick="event.stopPropagation()">VIEW DETAILS &rarr;</a>
+        <a href="https://github.com/owen-ingram/LuckyFruit" class="card-gh" onclick="event.stopPropagation()">GitHub</a>
+      </div>
+    </div>
+
+    <!-- TPS TEMPLATE -->
+    <div class="project-card" onclick="window.location='projects.html#tps-shooter'">
+      <div class="card-status">
+        <span class="status-dot wip"></span>
+        IN DEVELOPMENT
+      </div>
+      <div class="card-title">3RD PERSON SHOOTER TEMPLATE</div>
+      <div class="card-engine">Unity 6 &mdash; C# &mdash; JetBrains Rider</div>
+      <p class="card-desc">
+        A modular third-person shooter framework featuring 8-directional locomotion, Cinemachine camera controls, a runtime weapon-swapping equipment system with IK integration, and a component-based architecture built on Unity's New Input System.
+      </p>
+      <div class="card-tags">
+        <span class="tag">Unity 6</span>
+        <span class="tag">C#</span>
+        <span class="tag">Cinemachine</span>
+        <span class="tag">Animation Rigging</span>
+      </div>
+      <div class="card-footer">
+        <a href="projects.html#tps-shooter" class="card-cta" onclick="event.stopPropagation()">VIEW DETAILS &rarr;</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<hr class="page-divider">
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="sec-label">Find Me</div>
+  <div class="sec-title">CONTACT</div>
+  <div class="sec-rule"></div>
+  <p style="color:var(--muted); font-size:21px; max-width:480px; line-height:1.7;">
+    Open to game dev and software engineering roles. Feel free to reach out on GitHub or LinkedIn.
+  </p>
+  <div class="contact-links">
+    <a href="https://github.com/owen-ingram" class="contact-link primary">GitHub</a>
+    <a href="https://www.linkedin.com/in/owen-ingram-09151b239/" class="contact-link">LinkedIn</a>
+    <a href="AnalyticsResume.pdf" class="contact-link" download>Resume</a>
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 Owen Ingram
+</footer>
 
 </body>
 </html>
